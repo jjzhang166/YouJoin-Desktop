@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FriendBlock</class>
+ <widget class="QWidget" name="FriendBlock">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>825</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="send_button">
+   <property name="geometry">
+    <rect>
+     <x>548</x>
+     <y>495</y>
+     <width>92</width>
+     <height>88</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="msg_edit">
+   <property name="geometry">
+    <rect>
+     <x>18</x>
+     <y>495</y>
+     <width>521</width>
+     <height>91</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="chat_table">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>601</width>
+     <height>461</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="friend_list_table">
+   <property name="geometry">
+    <rect>
+     <x>657</x>
+     <y>40</y>
+     <width>169</width>
+     <height>561</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

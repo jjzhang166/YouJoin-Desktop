@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InfoCollectionForm</class>
+ <widget class="QWidget" name="InfoCollectionForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>825</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="okButton">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>510</y>
+     <width>117</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateEdit">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>460</y>
+     <width>110</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="workBox">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>120</y>
+     <width>111</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="sex_man">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>110</y>
+     <width>89</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>男</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="sex_woman">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>150</y>
+     <width>89</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>女</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="hobby_sport">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>280</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>运动</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="hobby_tour">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>320</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>旅行</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="hobby_carton">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>280</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>动漫</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="hobby_photo">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>320</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>摄影</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="hobby_movie">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>360</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>电影</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="hobby_science">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>400</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>科技</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="hobby_digit">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>360</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>数码</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

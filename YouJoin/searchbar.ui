@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>search_bar</class>
+ <widget class="QWidget" name="search_bar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>424</width>
+    <height>425</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="list_button">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>22</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="search_edit">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>5</y>
+     <width>361</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="result_table">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>86</y>
+     <width>361</width>
+     <height>151</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pic_label">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>50</y>
+     <width>361</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="person_pic_label">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>237</y>
+     <width>361</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="person_result_table">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>273</y>
+     <width>361</width>
+     <height>151</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

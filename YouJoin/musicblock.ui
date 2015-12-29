@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MusicBlock</class>
+ <widget class="QWidget" name="MusicBlock">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>825</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="last_button">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>23</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="play_button">
+   <property name="geometry">
+    <rect>
+     <x>83</x>
+     <y>20</y>
+     <width>23</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="next_button">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>20</y>
+     <width>23</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="share_button">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>500</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="song_label">
+   <property name="geometry">
+    <rect>
+     <x>467</x>
+     <y>152</y>
+     <width>191</width>
+     <height>53</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>song</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="singer_label">
+   <property name="geometry">
+    <rect>
+     <x>467</x>
+     <y>220</y>
+     <width>191</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>singer</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="album_label">
+   <property name="geometry">
+    <rect>
+     <x>469</x>
+     <y>290</y>
+     <width>191</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>album</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="curr_time_label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>540</y>
+     <width>41</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>00:00</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="total_time_label">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>540</y>
+     <width>31</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>00:00</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="album_pic_label">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>160</y>
+     <width>300</width>
+     <height>300</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QSlider" name="vol_slider">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>25</y>
+     <width>161</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QSlider" name="play_slider">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>555</y>
+     <width>391</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="playlist_table">
+   <property name="geometry">
+    <rect>
+     <x>692</x>
+     <y>0</y>
+     <width>133</width>
+     <height>546</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pause_button">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>20</y>
+     <width>23</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bigger_button">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>568</y>
+     <width>21</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="add_button">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>565</y>
+     <width>21</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="lrc_button">
+   <property name="geometry">
+    <rect>
+     <x>465</x>
+     <y>95</y>
+     <width>21</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

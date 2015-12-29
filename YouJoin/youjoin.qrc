@@ -1,0 +1,82 @@
+<RCC>
+    <qresource prefix="/YouJoin">
+      <file>Resources/login-background.png</file>
+      <file>Resources/homepage-background.png</file>
+      <file>Resources/background-guide--.png</file>
+      <file>Resources/background-guide-x.png</file>
+      <file>Resources/button-login.png</file>
+      <file>Resources/button-signup.png</file>
+      <file>Resources/frame.png</file>
+      <file>Resources/test.png</file>
+      <file>Resources/sidebar_background.png</file>
+      <file>Resources/homepage-notclick.png</file>
+      <file>Resources/homepage-click.png</file>
+      <file>Resources/friend-notclick.png</file>
+      <file>Resources/friend-click.png</file>
+      <file>Resources/photo-notclick.png</file>
+      <file>Resources/photo-click.png</file>
+      <file>Resources/recommend-notclick.png</file>
+      <file>Resources/recommend-click.png</file>
+      <file>Resources/music-notclick.png</file>
+      <file>Resources/music-click.png</file>
+      
+      <file>Resources/information-notclick.png</file>
+      <file>Resources/information-click.png</file>
+      <file>Resources/more-notclick.png</file>
+      <file>Resources/more-click.png</file>
+
+      <file>Resources/offline-button.png</file>
+      <file>Resources/online-button.png</file>
+      <file>Resources/userblock-background.png</file>
+      <file>Resources/more-background.png</file>
+
+      <file>Resources/weather-block-background.png</file>
+      <file>Resources/friend-background.png</file>
+      <file>Resources/music-background.png</file>
+
+      <file>Resources/send.png</file>
+      <file>Resources/text-send.png</file>
+      <file>Resources/text-receive.png</file>
+
+      <file>Resources/sun.png</file>
+      <file>Resources/back.png</file>
+      <file>Resources/next.png</file>
+      <file>Resources/play.png</file>
+      <file>Resources/share.png</file>
+      <file>Resources/add.png</file>
+      <file>Resources/bigger.png</file>
+      <file>Resources/pause.png</file>
+      <file>Resources/defaultalbumpic.jpg</file>
+      <file>Resources/button-agreement.png</file>
+      <file>Resources/button-update.png</file>
+      <file>Resources/button-quit.png</file>
+      <file>Resources/button-setup.png</file>
+      <file>Resources/button-contactus.png</file>
+
+      <file>Resources/add-friend.png</file>
+      <file>Resources/userinformation-bg.png</file>
+      <file>Resources/user.png</file>
+      <file>Resources/save.png</file>
+      <file>Resources/information-background.png</file>
+      <file>Resources/photo-background.png</file>
+      <file>Resources/recommand-background.png</file>
+
+      <file>Resources/list-button.png</file>
+      <file>Resources/pic1.png</file>
+      <file>Resources/pic1mini.png</file>
+      <file>Resources/pic2.png</file>
+      <file>Resources/pic2mini.png</file>
+      <file>Resources/pic3.png</file>
+      <file>Resources/pic3mini.png</file>
+
+      <file>Resources/about-dlg.png</file>
+      <file>Resources/connect-dlg.png</file>
+      <file>Resources/update-dlg.png</file>
+
+      <file>Resources/searchmusic.png</file>
+      <file>Resources/searchperson.png</file>
+      <file>Resources/homepage-send.png</file>
+      <file>Resources/homepage-msg.png</file>
+
+    </qresource>
+</RCC>

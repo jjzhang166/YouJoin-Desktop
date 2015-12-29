@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>main_form</class>
+ <widget class="QWidget" name="main_form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1025</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>YouJoin</string>
+  </property>
+  <widget class="QPushButton" name="send_buttton">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>30</y>
+     <width>67</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="msgEdit">
+   <property name="geometry">
+    <rect>
+     <x>215</x>
+     <y>30</y>
+     <width>526</width>
+     <height>151</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="msgTable">
+   <property name="geometry">
+    <rect>
+     <x>225</x>
+     <y>240</y>
+     <width>571</width>
+     <height>341</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="date_label">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>130</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>date</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

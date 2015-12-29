@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>login_form</class>
+ <widget class="QWidget" name="login_form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1025</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>YouJoin-Login</string>
+  </property>
+  <widget class="QPushButton" name="signup_button">
+   <property name="geometry">
+    <rect>
+     <x>816</x>
+     <y>232</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="signin_button">
+   <property name="geometry">
+    <rect>
+     <x>687</x>
+     <y>222</y>
+     <width>146</width>
+     <height>75</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="username_edit">
+   <property name="geometry">
+    <rect>
+     <x>373</x>
+     <y>217</y>
+     <width>285</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="min_button">
+   <property name="geometry">
+    <rect>
+     <x>958</x>
+     <y>9</y>
+     <width>14</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="password_edit">
+   <property name="geometry">
+    <rect>
+     <x>373</x>
+     <y>269</y>
+     <width>285</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
