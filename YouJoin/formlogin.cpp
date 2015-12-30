@@ -8,11 +8,6 @@ YJ_Login_Form::YJ_Login_Form(QWidget *parent)
 	yj_init_ui();
 	yj_init_connections();
 
-	tcpClient = new QTcpSocket(this);
-
-	connect(tcpClient, SIGNAL(connected()), this, SLOT(yj_haved_connected()));
-	connect(tcpClient, SIGNAL(error(QAbstractSocket::SocketError)), this, SLOT(yj_display_error()));
-
 }
 
 YJ_Login_Form::~YJ_Login_Form()
@@ -74,6 +69,9 @@ void YJ_Login_Form::yj_init_connections()
 	connect(ui.signin_button, SIGNAL(clicked()), this, SLOT(yj_signin_button_clicked()));
 	connect(ui.signup_button, SIGNAL(clicked()), this, SLOT(yj_signup_button_clicked()));
 	connect(ui.min_button, SIGNAL(clicked()), this, SLOT(showMinimized()));
+
+	networker = NetWorker::instance();
+	connect(networker, &NetWorker::onPostFinished, [=](QByteArray data) { yj_parse_json(data); });
 }
 
 void YJ_Login_Form::yj_signin_button_clicked()
@@ -116,57 +114,13 @@ void YJ_Login_Form::yj_init_send_data(int data_type)
 
 void YJ_Login_Form::yj_connect_server()
 {
-	//tcpClient->connectToHost("125.216.250.79", PORT_SIGN);
-	tcpClient->connectToHost(YJ_CONSTANTS::IPADDRESS_LOCALHOST, YJ_CONSTANTS::PORT_SIGN);
-}
+	networker->post(YJ_CONSTANTS::API_SIGNIN);
 
-void YJ_Login_Form::yj_haved_connected()
-{
-	connect(tcpClient, SIGNAL(readyRead()), this, SLOT(yj_accept_msg()));
-
-	if (info_map.empty()) return;
-	QVariantList info_list;
-	info_list << info_map;
-	QJsonDocument jsonDocument = QJsonDocument::fromVariant(info_list);
-
-	if (tcpClient->state() == QAbstractSocket::ConnectedState){
-		yj_send_msg(jsonDocument);
-	}
-
-}
-
-void YJ_Login_Form::yj_display_error(QAbstractSocket::SocketError)
-{
-
-}
-
-void YJ_Login_Form::yj_accept_msg()
-{
-	QDataStream in(tcpClient);
-	in.setVersion(QDataStream::Qt_5_0);
-	blockSize = 0;
-
-	if (blockSize == 0){
-		in >> blockSize;
-	}
-
-	if (blockSize > 0){
-		QByteArray data;
-		in >> data;
-		yj_parse_json(data);
-	}
 }
 
 void YJ_Login_Form::yj_parse_json(QByteArray &data)
 {
-	QString str(data);
-	QString json_data;
-
-	for (int i = 1; i < str.length(); i++){
-		if (str[i] != ' '){
-			json_data.append(str[i]);
-		}
-	}
+	QString json_data(data);
 
 	QJsonDocument jsonDocument = QJsonDocument::fromJson(json_data.toUtf8());
 
@@ -174,8 +128,8 @@ void YJ_Login_Form::yj_parse_json(QByteArray &data)
 
 	QString log_res = result[QLatin1Literal("result")].toString();
 
-	if (log_res == "successfully"){
-		tcpClient->deleteLater();
+	if (log_res == "success"){
+
 // 		int userid = result[QLatin1Literal("userid")].toInt();
 // 		info.set_user_id(userid);
 		info = user_info(result[QLatin1Literal("userinfo")].toMap());
@@ -192,26 +146,5 @@ void YJ_Login_Form::yj_parse_json(QByteArray &data)
 			QString::fromLocal8Bit("很遗憾，登陆或注册失败！\n请检查用户名密码是否填写正确。\n请检查网络连接是否正常。"),
 			QMessageBox::Cancel);
 	}
-
-	tcpClient->disconnectFromHost();
-	tcpClient->waitForDisconnected();
 }
 
-void YJ_Login_Form::yj_send_msg(QJsonDocument &d)
-{
-	if (d.isEmpty()) return;
-
-	QString hehe = d.toJson();
-
-	QByteArray data;
-
-	QDataStream out(&data, QIODevice::WriteOnly);
-	out.setVersion(QDataStream::Qt_5_0);
-
-	out << quint16(0) << hehe.toUtf8();
-
-	out.device()->seek(0);
-	out << quint16(data.size() - sizeof(quint16));
-	tcpClient->write(data);
-
-}

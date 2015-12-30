@@ -21,6 +21,7 @@
 #include "constants.h"
 #include "userinfo.h"
 #include "ipushbutton.h"
+#include "network.h"
 
 #include <vector>
 using std::vector;
@@ -53,18 +54,6 @@ private slots:
 	//连接登录服务器
 	void yj_connect_server();
 
-	//连接成功，准备读取登录结果
-	void yj_haved_connected();
-
-	//网络连接错误处理
-	void yj_display_error(QAbstractSocket::SocketError);
-
-	//接收服务器发送的数据
-	void yj_accept_msg();
-
-	//向服务器发送数据
-	void yj_send_msg(QJsonDocument &data);
-
 signals:
 
 	//登录成功信号
@@ -93,14 +82,16 @@ private:
 
 	vector<user_info> friends;
 
-	QTcpSocket *tcpClient;
+	//QTcpSocket *tcpClient;
 
 	I_PushButton *exitButton;
 
 	//QString localMessage; // 存放本地要发送的信息
 	//QString serverMessage;  //存放从服务器接收到的信息
-	quint16 blockSize;  //存放接收到的信息大小
+	//quint16 blockSize;  //存放接收到的信息大小
 	Ui::login_form ui;
+
+	NetWorker *networker;
 	
 };
 

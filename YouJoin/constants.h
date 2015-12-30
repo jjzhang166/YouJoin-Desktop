@@ -5,6 +5,11 @@
 #include <QString>
 
 namespace YJ_CONSTANTS{
+
+	const QString BASE_API = "http://www.tekbroaden.com/youjoin-server/controllers/";
+	const QString API_SIGNIN = (QString) BASE_API + "signin.php";
+
+
 	//登录界面的请求类型
 	//用户登录 0
 	//用户注册 1

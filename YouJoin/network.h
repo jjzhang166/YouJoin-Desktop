@@ -10,6 +10,7 @@
 #include <QObject>
 #include <QNetworkAccessManager>
 #include <QNetworkReply>
+#include <QJsonDocument>
 
 class NetWorker : public QObject{
 	
@@ -25,9 +26,18 @@ public:
 	//向url发送get请求
 	void get(const QString &url);
 
+	//向url发送post请求
+	void post(const QString &url);
+
 signals:
 	//操作完成后发射finished信号
 	void finished(QNetworkReply *reply);
+
+	//post请求完成后发射该信号,参数为服务器返回的json数据
+	void onPostFinished(QByteArray data);
+
+private slots:
+	void onFinished();
 
 private:
 	class Private;
